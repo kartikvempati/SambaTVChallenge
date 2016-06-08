@@ -1,0 +1,13 @@
+<div ng-controller="Login">
+        <span>Login</span>
+        <br>
+        <span>Username: <input ng-model="username"type = "text" class="username" placeholder="Username"></span>
+        <br>
+        <span>Password: <input ng-model="password"type = "password" class="password"></span>
+        <br>
+        <span ng-show="error1" style="color:red">{{msg1}}</span>
+        <span ng-show="error2" style="color:red">{{msg2}}</span>
+        <span ng-show="error3" style="color:red">{{msg3}}</span>
+        <br>
+        <button ng-click="submit()">Submit</button>
+</div>

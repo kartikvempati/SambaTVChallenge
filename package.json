@@ -1,0 +1,16 @@
+{
+  "name": "boilerplate",
+  "version": "1.0.0",
+  "description": "boilerplate node/angular setup",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "Kartik Vempati",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.7.1",
+    "express": "^4.13.4",
+    "nodemon": "^1.9.1"
+  }
+}
