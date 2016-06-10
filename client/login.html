@@ -1,13 +1,22 @@
 <div ng-controller="Login">
-        <span>Login</span>
+        <div>
+          <b>Login</b>
+        </div>
         <br>
-        <span>Username: <input ng-model="username"type = "text" class="username" placeholder="Username"></span>
-        <br>
-        <span>Password: <input ng-model="password"type = "password" class="password"></span>
-        <br>
-        <span ng-show="error1" style="color:red">{{msg1}}</span>
-        <span ng-show="error2" style="color:red">{{msg2}}</span>
+        <div>
+          <span>Username: <input ng-model="username"type = "text" class="username" placeholder="Username"></span>
+          <br>
+          <div ng-show ="error1">
+            <span style="color:red">{{msg1}}</span>
+            <br>
+          </div>
+          <span>Password: <input ng-model="password"type = "password" class="password" placeholder="password"></span>
+          <br>
+          <div ng-show="error2">
+            <span ng-show="error2" style="color:red">{{msg2}}</span>
+          </div>
+          <button ng-click="submit()">Submit</button>
+        </div>
         <span ng-show="error3" style="color:red">{{msg3}}</span>
         <br>
-        <button ng-click="submit()">Submit</button>
 </div>
